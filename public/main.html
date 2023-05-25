@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FWS</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
+</head>
+<body>
+    <div id="main">
+        <form action="/page" method="post">
+            <img id="logo" src="./img/logo.png" alt="logo">
+            <label for=""></label>
+            <input type="text" name="url" id="inputUrl" placeholder="URL Link..."><br>
+            <input type="submit" value="Create" id="submitBtn">
+        </form>
+    </div>
+
+    <script>
+        const openNewTabButton = document.getElementById('submitBtn');
+        openNewTabButton.addEventListener('click', function() {
+          window.open('/', '_blank');
+        });
+      </script>
+</body>
+</html>
